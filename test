@@ -1,0 +1,20 @@
+local script1 = [[
+    print("loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))()")
+    -- Your first script logic here
+]]
+
+local script2 = [[
+    print("loadstring(game:HttpGet("https://raw.githubusercontent.com/Athergaming/Roblox-Murder-Mystery-2-Script/main/AtherHub%20Murder%20Mystery%202%20Script.lua"))()")
+    -- Your second script logic here
+]]
+
+-- Combine the scripts
+local combinedScript = script1 .. "\n" .. script2
+
+-- Load and execute the combined script
+local func = loadstring(combinedScript)
+if func then
+    func()
+else
+    print("Failed to load the script.")
+end
